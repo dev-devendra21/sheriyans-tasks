@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "manrope-light";
+  src: url("./font/manrope.light.otf");
+}
+
+@font-face {
+  font-family: "manrope-regular";
+  src: url("./font/manrope.regular.otf");
+}
+
+@font-face {
+  font-family: "manrope-semibold";
+  src: url("./font/manrope.semibold.otf");
+}
+
+@font-face {
+  font-family: "manrope-thin";
+  src: url("./font/manrope.thin.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "manrope-regular";
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: "manrope-semibold";
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.hero-section img {
+  position: absolute;
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.img-1 {
+  top: 50%;
+  left: 40%;
+}
+.img-2 {
+  top: 20%;
+  left: 50%;
+}
+.img-3 {
+  top: 60%;
+  left: 60%;
+}
+.title {
+  text-align: center;
+  font-size: 200px;
+  text-transform: uppercase;
+  font-family: "manrope-thin";
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+}
+
+aside {
+  padding: 1rem;
+}
+
+aside h5 {
+  font-family: "manrope-semibold";
+  font-weight: 600;
+}
+
+.collection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.collection > h3 {
+  font-style: italic;
+  font-family: "manrope-thin";
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.collection > p {
+  font-family: "manrope-semibold";
+  font-weight: 600;
+  text-decoration: underline;
+}

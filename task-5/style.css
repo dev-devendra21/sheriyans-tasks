@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: cursive;
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100%;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner-img {
+  width: 100%;
+  height: 90vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background-image: url("./team_player_bg.jpg");
+  background-size: cover;
+  background-position: left top;
+  width: 350px;
+  height: 380px;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.player-name {
+  color: #e75900;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.player-no {
+  color: #e75900;
+  font-size: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.8s ease-in-out;
+}
+
+.player-img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.8s ease-in-out;
+  z-index: 2;
+}
+
+.role-img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.card:hover .player-no {
+  transform: translateX(-30%);
+  color: #f8be40;
+}
+
+.card:hover .player-img {
+  transform: translateX(-100%);
+}
