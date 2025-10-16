@@ -1,0 +1,315 @@
+.btn {
+  outline: none;
+  padding: 0.8rem;
+}
+.btn-round {
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #92918e;
+  color: #f4f2ed;
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+.btn-link {
+  color: #f4f2ed;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Chillax-regular";
+  src: url("./Fonts/WEB/fonts/Chillax-Regular.ttf");
+}
+@font-face {
+  font-family: "satoshi";
+  src: url("./Fonts/Satoshi/Satoshi-Light.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: clamp(14px, 1vw, 18px);
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  width: 100%;
+  max-width: 2000px;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+main .hero-section-one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .hero-section-one .img-container {
+  width: 100%;
+  order: 1;
+}
+main .hero-section-one .img-container .hero-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .hero-section-one .hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  order: 1;
+}
+main .hero-section-one .hero-content .sub-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #92918e;
+  text-transform: uppercase;
+}
+main .hero-section-one .hero-content div .title {
+  font-family: "Chillax-regular";
+  font-size: 3rem;
+  font-weight: 400;
+  color: #f4f2ed;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+main .hero-section-one .hero-content div .description {
+  font-family: "satoshi";
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #92918e;
+}
+main .hero-section-one .hero-content div div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+main .status-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+main .status-container div {
+  text-align: center;
+}
+main .status-container div p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #92918e;
+  text-transform: uppercase;
+}
+main .status-container div h2 {
+  font-family: "Chillax-regular";
+  font-size: 3rem;
+  font-weight: 400;
+  color: #f4f2ed;
+}
+main .hero-section-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .hero-section-two .img-container {
+  width: 100%;
+  order: 1;
+}
+main .hero-section-two .img-container .hero-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .hero-section-two .hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  order: 1;
+}
+main .hero-section-two .hero-content .sub-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #92918e;
+  text-transform: uppercase;
+}
+main .hero-section-two .hero-content div .title {
+  font-family: "Chillax-regular";
+  font-size: 3rem;
+  font-weight: 400;
+  color: #f4f2ed;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+main .hero-section-two .hero-content div .description {
+  font-family: "satoshi";
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #92918e;
+}
+main .hero-section-two .hero-content div div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+main .team-container h2 {
+  font-family: "Chillax-regular";
+  font-size: 3rem;
+  font-weight: 400;
+  color: #f4f2ed;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+main .team-container .team-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+main .team-container .team-images div {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+main .team-container .team-images div img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .team-container .team-images div .img-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 1rem;
+  top: 0%;
+}
+main .team-container .team-images div .img-overlay .top {
+  padding: 1rem;
+  color: #f4f2ed;
+  text-align: end;
+  width: 100%;
+}
+main .team-container .team-images div .img-overlay .bottom {
+  border-radius: 0.5rem;
+  border: 1px solid #92918e;
+  padding: 1rem;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: #f4f2ed;
+}
+main .team-container .team-images div .img-overlay .bottom h4 {
+  font-family: "Chillax-regular";
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .team-container .team-images div .img-overlay .bottom p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "satoshi";
+}
+main .team-container .team-images div .img-overlay .bottom-one {
+  background: linear-gradient(to left, rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.5), rgba(244, 242, 237, 0.3), rgba(244, 242, 237, 0.4));
+}
+main .team-container .team-images div .img-overlay .bottom-two {
+  background: linear-gradient(to left, rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.5), rgba(244, 242, 237, 0.6), rgba(244, 242, 237, 0.6), rgba(18, 18, 18, 0.5));
+}
+main .team-container .team-images div .img-overlay .bottom-three {
+  background: linear-gradient(to right, rgba(244, 242, 237, 0.3), rgba(18, 18, 18, 0.5), rgba(244, 242, 237, 0.5), rgba(18, 18, 18, 0.5));
+}
+
+@media screen and (min-width: 768px) {
+  main .hero-section-two .img-container {
+    width: 100%;
+    order: 2;
+  }
+  main .hero-section-two .img-container .hero-img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  main .hero-section-two .hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    order: 1;
+  }
+  main .hero-section-two .hero-content .sub-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #92918e;
+    text-transform: uppercase;
+  }
+  main .hero-section-two .hero-content div .title {
+    font-family: "Chillax-regular";
+    font-size: 3rem;
+    font-weight: 400;
+    color: #f4f2ed;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  main .hero-section-two .hero-content div .description {
+    font-family: "satoshi";
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #92918e;
+  }
+  main .hero-section-two .hero-content div div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.8rem;
+  }
+  main .hero-section {
+    display: flex;
+    flex-direction: row;
+  }
+  main .hero-section .hero-img {
+    width: 50%;
+  }
+  main .hero-section .hero-content {
+    justify-content: space-between;
+  }
+  main .hero-section .hero-content div .title {
+    font-size: 4rem;
+  }
+  main .status-container {
+    padding: 3rem;
+  }
+  main .status-container div h2 {
+    font-size: 4rem;
+  }
+  main .team-container .team-images {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */

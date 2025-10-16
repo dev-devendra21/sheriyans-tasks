@@ -1,0 +1,23 @@
+.btn {
+  outline: none;
+  padding: 0.8rem;
+
+  &-round {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #92918e;
+    color: #f4f2ed;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+  }
+
+  &-link {
+    color: #f4f2ed;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+button {
+  cursor: pointer;
+}
