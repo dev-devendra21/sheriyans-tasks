@@ -1,6 +1,6 @@
 .btn {
   outline: none;
-  padding: 0.8rem;
+  padding: 1rem;
 
   &-round {
     border-radius: 50%;
@@ -16,8 +16,22 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  &-primary {
+    background-color: #161616;
+    border: 1px solid #161616;
+    border-radius: 0.5rem;
+    color: #f4f2ed;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
 }
 
 button {
   cursor: pointer;
+}
+
+i {
+  font-size: 1.2rem;
 }

@@ -1,4 +1,6 @@
 @import "./button.scss";
+@import "./footer.scss";
+@import "./header.scss";
 
 @font-face {
   font-family: "Chillax-regular";
@@ -30,6 +32,7 @@ html {
 section {
   width: 100%;
   max-width: 2000px;
+  padding: 1rem;
 }
 
 @mixin flex($direction) {
@@ -37,18 +40,18 @@ section {
   flex-direction: $direction;
 }
 
-@mixin subtitle() {
+@mixin subtitle($color: #92918e) {
   font-size: 1rem;
   font-weight: 400;
-  color: #92918e;
+  color: $color;
   text-transform: uppercase;
 }
 
-@mixin title() {
+@mixin title($color: #f4f2ed, $size: 3rem) {
   font-family: "Chillax-regular";
-  font-size: 3rem;
+  font-size: $size;
   font-weight: 400;
-  color: #f4f2ed;
+  color: $color;
 }
 
 @mixin heroImage($order: 1) {
@@ -66,7 +69,7 @@ section {
   .hero-content {
     width: 100%;
     @include flex(column);
-    background-color: #121212;
+    background-color: #1e1e1e;
     padding: 2.5rem;
     border-radius: 1rem;
     order: $order;
@@ -100,7 +103,6 @@ section {
 }
 
 main {
-  padding: 1rem;
   @include flex(column);
   gap: 2rem;
   align-items: center;
@@ -170,6 +172,12 @@ main {
             color: #f4f2ed;
             text-align: end;
             width: 100%;
+            button {
+              background-color: rgba(255, 255, 255, 0.05);
+              border: 1px solid rgba(255, 255, 255, 0.15);
+              backdrop-filter: blur(2rem);
+              font-weight: 100;
+            }
           }
           .bottom {
             border-radius: 0.5rem;
@@ -182,6 +190,9 @@ main {
             display: flex;
             justify-content: space-between;
             color: #f4f2ed;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(2rem);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             h4 {
               font-family: "Chillax-regular";
               font-size: 1.2rem;
@@ -195,39 +206,24 @@ main {
               font-family: "satoshi";
             }
           }
-
-          .bottom-one {
-            background: linear-gradient(
-              to left,
-              rgba(18, 18, 18, 0.5),
-              rgba(18, 18, 18, 0.5),
-              rgba(18, 18, 18, 0.5),
-              rgba(244, 242, 237, 0.3),
-              rgba(244, 242, 237, 0.4)
-            );
-          }
-
-          .bottom-two {
-            background: linear-gradient(
-              to left,
-              rgba(18, 18, 18, 0.5),
-              rgba(18, 18, 18, 0.5),
-              rgb(244, 242, 237, 0.6),
-              rgb(244, 242, 237, 0.6),
-              rgba(18, 18, 18, 0.5)
-            );
-          }
-
-          .bottom-three {
-            background: linear-gradient(
-              to right,
-              rgb(244, 242, 237, 0.3),
-              rgba(18, 18, 18, 0.5),
-              rgb(244, 242, 237, 0.5),
-              rgba(18, 18, 18, 0.5)
-            );
-          }
         }
+      }
+    }
+  }
+
+  .contact-us-container {
+    padding: 1.5rem;
+    background: #cebd63;
+    border-radius: 1rem;
+    @include flex(column);
+    div {
+      .sub-title {
+        @include subtitle(#1a1a1a);
+      }
+
+      .title {
+        @include title(#1a1a1a, 3.5rem);
+        text-transform: uppercase;
       }
     }
   }
@@ -268,6 +264,20 @@ main {
     .team-container {
       .team-images {
         @include flex(row);
+      }
+    }
+
+    .contact-us-container {
+      @include flex(row);
+      align-items: center;
+      div {
+        .title {
+          font-size: 5.5rem;
+          line-height: 1;
+        }
+      }
+      .btn-container {
+        align-self: flex-end;
       }
     }
   }
