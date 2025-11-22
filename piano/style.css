@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightcoral;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: cursive;
+}
+
+.piano {
+  width: calc(2rem * 21);
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.key {
+  width: 2rem;
+  height: 12rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding-top: 10rem;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.piano-key.active {
+  box-shadow: none;
+  background-color: #ccc;
+  top: 3px;
+}
+
+.black {
+  height: 7rem;
+  width: 1.5rem;
+  background-color: #000;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+  top: 0rem;
+  z-index: 1;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.5);
+  padding-top: 5rem;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.black-1 {
+  left: 1.2rem;
+}
+.black-2 {
+  left: 3.2rem;
+}
+
+.black-3 {
+  left: 7.2rem;
+}
+
+.black-4 {
+  left: 9.2rem;
+}
+
+.black-5 {
+  left: 11.2rem;
+}
+
+.black-6 {
+  left: 15.2rem;
+}
+
+.black-7 {
+  left: 17.2rem;
+}
+
+.black-8 {
+  left: 21.2rem;
+}
+
+.black-9 {
+  left: 23.2rem;
+}
+
+.black-10 {
+  left: 25.2rem;
+}
+
+.black-11 {
+  left: 29.2rem;
+}
+
+.black-12 {
+  left: 31.2rem;
+}
+
+.black-13 {
+  left: 35.2rem;
+}
+
+.black-14 {
+  left: 37.2rem;
+}
+
+.black-15 {
+  left: 39.2rem;
+}
